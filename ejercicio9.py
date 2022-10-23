@@ -8,12 +8,16 @@
 #devolver la lista modificada
 #finalmente, después de ejecutar la función, comprueba que la suma de todos los números a partir del segundo, concuerdan con el primer número de la lista tal que así:
 
-lista = [17, 24, 2, 13, 5, 4, 6, 1, 89, 0, 3, 7, 55, 25, 30, 8, 68, 156]
+lista = [17, 24, 2, 13, 5, 5, 5, 4, 6, 1, 89, 0, 3, 7, 55, 25, 30, 8, 68, 156, 7, 13, 68]
 print("Esta es la lista original: ", lista)
 print("\n\n")
 
 def modificar():
-  lista1=sorted(lista, reverse=True)
+  lista1=list(set(lista))
+  print("Esta es la lista sin los números repetidos:", lista1)
+  print("\n\n")
+
+  lista1=sorted(lista1, reverse=True)
   print("Esta es la lista ordenada de mayor a menor:", lista1)
   
   print("\n\n")
@@ -37,11 +41,9 @@ def modificar():
   lista2.append(sumalista2)
   lista2=sorted(lista2, reverse=True)
 
-  print(lista2)
+  print("Esta es la lista con el valor de la suma como primer elmento de la lista:",lista2)
   print("\n\n")
 
   print("*",lista2[0]==sum(lista2[1:]),"*")
 
-
 modificar()
-
