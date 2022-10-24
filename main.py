@@ -1,9 +1,11 @@
-cadena = ("zeréP nauJ, 01")
+print("\n\n")
+lista= [1,5, -2]
 
-cadena_invertida= cadena[::-1].split( ",")
-
-print( cadena_invertida[1] + " ha sacado un " + cadena_invertida[0] + "de nota")
-
-
-
-
+def agregar_una_vez(elemento):
+  if elemento in lista:
+    print(f"Error: Imposible añadir elementos duplicados --> {elemento}\n")
+  else:
+    lista.append(elemento)
+agregar_una_vez(5)
+print(lista)
+    
