@@ -21,3 +21,6 @@ print("CENTENAS:",'%02d' % centena)
 print("MIL:",'%01d' % mil)
 
 
+numero=str(12).ljust(4, '0')
+
+print(numero)

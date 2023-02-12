@@ -12,4 +12,5 @@ for letra in lista_1:
   if letra in lista_2 and letra not in lista3:
     lista3.append(letra)
 
+    
 print(lista3)
